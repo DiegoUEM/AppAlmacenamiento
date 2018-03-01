@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/margen2"
+    tools:context="com.example.a21608838.appalmacenamiento.AInternoActivity">
+
+    <TextView
+        android:id="@+id/tvTexto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnGuardarAI"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/btnGuardarAI"
+        android:layout_marginTop="21dp"
+        android:text="Introduce un texto"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/etTexto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvTexto"
+        android:layout_alignStart="@+id/tvTexto"
+        android:layout_below="@+id/tvTexto"
+        android:layout_marginTop="21dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Escriba aqui su texto"/>
+
+    <Button
+        android:id="@+id/btnGuardarAI"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:onClick="GuardarAI"
+        android:text="Guardar" />
+</RelativeLayout>
